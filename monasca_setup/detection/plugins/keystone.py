@@ -28,7 +28,8 @@ class Keystone(monasca_setup.detection.ServicePlugin):
             'service_name': 'identity-service',
             'process_names': ['keystone-admin',
                               'keystone-main',
-                              'keystone-all'],
+                              'keystone-all',
+                              'keystone'],
             'service_api_url': 'http://localhost:35357/v3',
             'search_pattern': r'.*v3\..*'
         }
